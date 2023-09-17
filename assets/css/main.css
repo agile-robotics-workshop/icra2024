@@ -4020,10 +4020,11 @@ color: #55558f;
 }
 
 /* Media query for screens smaller than 768 pixels */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
     .overlay-title {
         top: 3.5%; /* Adjust this value as needed for mobile alignment */
         left: 4%; /* Adjust this value as needed for mobile alignment */
         /* You can also adjust font-size here if necessary */
+		font-size: 21px;
     }
 }
