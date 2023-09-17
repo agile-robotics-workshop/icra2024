@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("2023-05-29T09:00:00.000+01:00");
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<html>
+	<head>
+		<title>Workshop on Fast Robots ICRA 2024</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- table style-->
+		<style>
+			a{
+				color: white;
+			}
+			#schedule_tab {
+			  font-family: Arial, Helvetica, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			#schedule_tab td, #schedule_tab th {
+			  border: 2px solid #ddd;
+			  padding: 14px;
+			  color: white;
+			}
+
+			#schedule_tab tr:nth-child(even){background-color: #537072;}
+
+			#schedule_tab tr:hover {background-color: #f4ebdb;}
+
+			#schedule_tab th {
+			  padding-top: 12px;
+			  padding-bottom: 12px;
+			  text-align: left;
+			  background-color: #262f34;
+			  color: white;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#content">Content</a></li>
+							<li><a href="#schedule">Schedule</a></li>
+							<li><a href="#papers">Call for Papers</a></li>
+
+							<li><a href="#talks">Invited speakers</a></li>
+							<li><a href="#org">Organizers</a></li>
+							<!--li><a href="#collab">Links</a></li-->
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<video autoplay="" loop="" muted="" class="header-video">
+							<source src="./assets/fast_banner_low_sat.mp4">
+							Your browser does not support the video tag.
+						</video>
+						<h1 class="overlay-title">Workshop on Fast Robots @ <a href="http://ieee-icra.org/" target="_blank">ICRA2024</a></h1>
+						<div class="inner">
+
+							<p>
+							Robots today often navigate or manipulate slowly and intermittently, relying on bursts of computation for planning. This is in contrast to humans who routinely use fast and dynamic motions such as vaulting power cords over chairs when vacuuming, flinging garments to flatten before folding, lofting sheets across beds, jumping across obstacles, and running for fun or to reach a destination on time. Dynamic motions can speed task completion and manipulate objects out of reach,but they require careful integration of grasp planning, motion planning, and time-parameterization, lifting quasi-static assumptions, and strong safety considerations.
+							</p>
+
+							<p>
+							The objectives of the workshop would be to understand how we can get dynamic robots that operate faster and reliably, and we wish for the workshop scope to contain both manipulation and mobility (or navigation). By including both manipulation and mobility, we aim to broaden the appeal of the workshop and also explore and discuss similarities and differences between the two. By doing so we hope to open the doors to robots that operate faster in today’s world.
+							</p>
+
+							<h3> The workshop will be held in <b>hybrid mode</b> </h3>
+
+							<h3> Links: </h3>
+							
+							<ul id="link_list">
+							<p>
+							TBD
+							</p>
+							</ul>
+
+
+
+
+						</div>
+					</section>
+
+
+
+
+					<!-- Method -->
+					<section id="content" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Content</h2>
+							<h3>Topics</h3>
+
+							<p>
+								What is needed in order to get robots that can move and manipulate faster, ideally without sacrificing reliability and safety? What are the similarities and differences between methods used for dynamic manipulation versus dynamic mobility, and how can the techniques be merged together to achieve better performance? We aim to discuss and debate how to answer these questions during the workshop.
+
+Hence, the scope of the workshop focuses primarily on (but is not limited to) the following topics:
+
+
+
+<ul>
+  <li>Robot systems that are fast (high speed), agile (can change directions quickly), dynamic, etc.</li>
+  <li>Methods to allow robots to move faster given fixed existing hardware</li>
+  <li>Hardware and/or mechanical design for fast robots</li>
+  <li>Agility and stability of robots operating at high speeds</li>
+  <li>The intersection of fast manipulation and mobility for “whole body” manipulation </li>
+  <li>Integration and synchronization of grasp planning, motion planning, and time parameterization</li>
+  <li>Machine learning to help fast and dynamic robots generalize</li>
+  <li>Safety in unstructured situations with humans or other robots nearby</li>
+  <li>Application-specific challenges: fast bin-picking, fast assembly, fast delivery robots, tossing objects, catching objects, etc.</li>
+</ul>
+
+							</p>
+
+
+
+							<p> </p>
+<!--
+							<h3>Workshop format </h3>
+						<p>
+	</p>
+-->
+
+						</div>
+					</section>
+
+
+				<!-- Schedule -->
+					<section id="schedule" class="wrapper style3 spotlights">
+						<div class="inner">
+							<h2>Schedule  <!-- a href="schedule_poster_panel.pdf" target="_blank">[PDF]</a--></h2>
+							<hr style="width:80%;text-align:left;margin-left:5">
+							<div class="row">
+
+									<!--p></p>
+				    				<h3><b> TBA </b></h3>-->
+
+							</div>
+
+							<h3>Time Zone: GMT +09</h3>
+
+							<table id="schedule_tab">
+						  <tr>
+						    <th>Time</th>
+						    <th>Activity</th>
+						  </tr>
+						  <tr>
+						    <td>09:00 - 09:15</td>
+						    <td>Workshop opening </td>
+						  </tr>
+						  <tr>
+						    <td>09:15 - 09:45</td>
+						    <td> Invited Talk #1 </td>
+						  </tr>
+						  <tr>
+						    <td>09:45 - 10:15</td>
+						    <td> Invited Talk #2 </td>
+						  </tr>
+						  <tr>
+						    <td>10:15 - 10:45</td>
+						    <td>Spotlight talks #1
+						    	<ul>
+						    	<li> <b>Speakers</b> contents</li>
+							</ul>
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>10:45 - 11:30</td>
+						    <td>Coffee break  + Posters session #1
+						    	<ul>
+						    	<li> Posters
+						    	</li>
+						    	</ul>
+
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>11:30 – 12:00</td>
+						    <td> Invited Talk #3</td>
+						  </tr>
+						  <tr>
+						    <td>12:00 – 13:15</td>
+						    <td>Lunch </td>
+						  </tr>
+						  <tr>
+						    <td>13:15 – 13:45</td>
+						    <td> Invited Talk #4 </td>
+						  <tr>
+						    <td>13:45 – 14:15</td>
+						    <td> Invited Talk #5 </td>
+						  </tr>
+						  <tr>
+						  <td>14:15 – 14:45</td>
+						  <td>Spotlight talks #2
+						    	<ul>
+						    	<li> <b>Speakers</b> contents</li>
+							</ul>
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>14:45 – 15:30</td>
+						    <td>Coffee break  + Posters session #2
+						    	<ul>
+						    	<li> Posters
+						    	</li>
+						    	</ul>
+
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>15:30 – 16:00</td>
+						    <td> Invited Talk #6 </td>
+						  <tr>
+						    <td>16:00 – 16:30</td>
+						    <td> Invited Talk #7 </td>
+						  </tr>
+						  <tr>
+						    <td>16:30 – 17:00</td>
+						    <td> Invited Talk #8 </td>
+						  </tr>
+						  <tr>
+						    <td>17:00 – 17:30</td>
+						    <td>Panel discussion </td>
+						  </tr>
+						  <tr>
+						    <td>17:30 – 17:45</td>
+						    <td>Closing remarks</td>
+						  </tr>
+						</table>
+
+
+
+
+
+
+					</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- call for papers -->
+					<section id="papers" class="wrapper style4 fullscreen fade-up">
+						<div class="inner">
+							<h2>Call for papers</h2>
+
+							<p>
+								TBD
+							</p>
+
+
+
+						</div>
+					</section>
+
+
+
+					<!-- Schedule -->
+					<section id="talks" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>Invited Speakers (alphabetical order) </h2>
+							<!--ul>
+							</ul-->
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/tbd.svg" alt="TBD" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b>  TBD </b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 TBD
+									<br>
+									 University
+									<br>
+									<!-- <a href="link" target="_blank">Personal website</a> -->
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> title <br>
+									</p>
+							  </div>
+							</div>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+
+					</section>
+
+					<!-- org -->
+					<section id="org" class="wrapper style3 spotlights">
+						<div class="inner">
+							<h2>Organizers (alphabetical order)</h2>
+							<ul>
+								<li><a href="https://qingh097.github.io/">Huang (Raven) Huang</a>, University of California, Berkeley, USA</li>
+								<li><a href="http://ishikawa-vision.org/members/huang/huang-e.html">Shouren Huang</a>, Tokyo University of Science, Japan</li>
+								<li><a href="https://ichnow.ski/">Jeffrey Ichnowski</a>, Carnegie Mellon University, USA (Primary Contact)</li>
+								<li><a href="https://articuno144.github.io/">Yuntao Ma</a>, ETH Zürich, Switzerland</li>
+								<li><a href="https://gmargo11.github.io/">Gabriel Margolis</a>, Massachusetts Institute of Technology, USA</li>
+								<li><a href="https://danielseita.github.io/">Daniel Seita</a>, University of Southern California, USA</li>
+								<li><a href="http://www.joannetruong.com/">Joanne Truong</a>, Georgia Institute of Technology, USA</li>
+								<li><a href="http://www.hfr.iis.u-tokyo.ac.jp/index-e.html">Yuji Yamakawa</a>, The University of Tokyo, Japan</li>
+							</ul>
+
+
+
+					</section>
+
+
+
+
+					<!-- contact -->
+					<section id="contact" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact</h2>
+							 <p> If you have any questions please contact Jeff Ichnowski at the email: <b>jeffi AT cmu DOT edu</b> </p>
+
+
+
+
+						</div>
+					</section>
+
+
+
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul>
+					<li>
+						Endorsement: TBD
+
+					</li>
+					<li>
+					Participants are required to abide by the <a href="https://www.ieee-ras.org/about-ras/diversity-page/ieee-ras-code-of-conduct" target="_blank">IEEE RAS Code of Conduct</a>
+					</li>
+
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
