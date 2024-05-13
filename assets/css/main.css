@@ -3950,6 +3950,10 @@ input, select, textarea {
 	width:256px; 
 }
 
+.img-large{
+	width:512px; 
+}
+
 h3.name-list{
 	margin: 0;
 	padding: 0;
